@@ -3,6 +3,7 @@
 
 class SwooleLearn
 {
+    
     private $servce;
 
     public function __construct()
