@@ -9,13 +9,13 @@ class RPCService
     protected $server = null;
     protected $obj = null;
 
-    public function __construct()
-    {
-        if ( $this->obj === null ) {
-            $this->obj = new RPCService();
-        }
-        return $this->obj;
-    }
+//    public function init()
+//    {
+//        if ( $this->obj === null ) {
+//            $this->obj = new RPCService();
+//        }
+//        return $this->obj;
+//    }
 
     public function runTCP(){
         // 创建一个TCP服务
