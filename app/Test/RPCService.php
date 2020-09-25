@@ -1,9 +1,5 @@
 <?php
 
-
-namespace App\Test;
-
-
 class RPCService
 {
     protected $server = null;
