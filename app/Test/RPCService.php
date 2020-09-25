@@ -35,8 +35,8 @@ class RPCService
             // 监听链接关闭事件
             echo "Close\n";
         });
-        $this->server->start();
         echo "run.......";
+        $this->server->start();
     }
 
 }
