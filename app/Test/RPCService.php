@@ -11,8 +11,8 @@ class RPCService
 
     public function __construct()
     {
-        if ( !($this->obj instanceof self)) {
-            $this->obj = new self();
+        if ( !($this->obj instanceof RPCService)) {
+            $this->obj = new RPCService();
         }
         return $this->obj;
     }
