@@ -8,14 +8,14 @@ class RPCService
 {
     protected $server = null;
     protected $obj = null;
-
-    public function __construct()
-    {
-        if ( !($this->obj instanceof RPCService)) {
-            $this->obj = new RPCService();
-        }
-        return $this->obj;
-    }
+//
+//    public function __construct()
+//    {
+//        if ( !($this->obj instanceof RPCService)) {
+//            $this->obj = new RPCService();
+//        }
+//        return $this->obj;
+//    }
 
     public function runTCP(){
         // 创建一个TCP服务
