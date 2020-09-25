@@ -1,5 +1,9 @@
 <?php
 
+
+namespace App\Test;
+
+
 class RPCService
 {
     protected $server = null;
@@ -7,7 +11,7 @@ class RPCService
 
     public function __construct()
     {
-        if ( !$this->obj instanceof self) {
+        if ( !($this->obj instanceof self)) {
             $this->obj = new self();
         }
         return $this->obj;
