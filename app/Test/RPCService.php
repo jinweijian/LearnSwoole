@@ -28,6 +28,7 @@ class RPCService
         $this->server->on('Receive',function ($server, $fd, $from_id, $data){
             // 监听数据接收事件
             echo "Receive\n";
+            $server->send($fd, "OK 我接到你的消息了" . $data);
             print_r($data);
 
         });
